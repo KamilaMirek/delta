@@ -26,9 +26,13 @@ if(
     }
     elseif($delta==0){
         $x=-$b/2*$a;
+
+        include('views/delta-equal.php');
     }
     else{
         echo'Nie ma miejsc zerowych';
+        
+        include('views/delta-less.php');
     }
 
         }
