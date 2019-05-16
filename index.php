@@ -13,14 +13,14 @@ if(
         is_numeric($_GET['c'])){
     //PObieramy dane wysłane przez uytkownika do tabeli GET      
     $a=$_GET['a'];
-    $a=$_GET['b'];
-    $a=$_GET['c'];
+    $b=$_GET['b'];
+    $c=$_GET['c'];
 
     $delta=$b*$b-4*$a*$c;
 
     if($delta>0){
         $x1=(-$b-sqrt($delta))/2 *$a;
-        $x1=(-$b+sqrt($delta))/2 *$a;
+        $x2=(-$b+sqrt($delta))/2 *$a;
 
         include('views/delta-greater.php');
     }
