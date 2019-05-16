@@ -1,4 +1,16 @@
 <?php
+// //Funkcja
+// function delta($a,$b,$c){
+// $delta=$b*$b-4*$a*$c;
+// return $delta;
+// }
+// //Klasy
+// class delta2{
+//     function __construct($a,$b,$c){
+//         $delta=$b*$b-4*$a*$c;
+//         return $delta;
+//     }
+// }
 //włączamy pełne raportowanie błędów
 error_reporting(E_ERROR|E_WARNING|E_PARSE|E_NOTICE);
 //czy coś istnieje?
@@ -16,7 +28,9 @@ if(
     $b=$_GET['b'];
     $c=$_GET['c'];
 
-    $delta=$b*$b-4*$a*$c;
+     $delta=$b*$b-4*$a*$c;
+    //$delta=delta($a,$b,$c);
+    //$delta= new $delta2($a,$b,$c); <---coś jest ni tak, ale na razie to yolo
 
     if($delta>0){
         $x1=(-$b-sqrt($delta))/2 *$a;
@@ -31,7 +45,7 @@ if(
     }
     else{
         echo'Nie ma miejsc zerowych';
-        
+
         include('views/delta-less.php');
     }
 
