@@ -8,6 +8,11 @@
 </head>
 <body>
 <h1>Formularz</h1>
-    
+    <form action="index.php" method="get">
+    <input type="text" name="a">
+    <input type="text" name="b">
+    <input type="text" name="c">
+    <input type="submit" value="Oblicz deltę">
+    </form>
 </body>
 </html>
