@@ -32,10 +32,11 @@ if(
     //$delta=delta($a,$b,$c);
     //$delta= new $delta2($a,$b,$c); <---coś jest ni tak, ale na razie to yolo
 
+    
     if($delta>0){
         $x1=(-$b-sqrt($delta))/2 *$a;
         $x2=(-$b+sqrt($delta))/2 *$a;
-
+        
         include('views/delta-greater.php');
     }
     elseif($delta==0){
